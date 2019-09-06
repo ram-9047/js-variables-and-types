@@ -9,22 +9,78 @@
     * [ ] Mul
     * [ ] Div
 
+	let finalResult;
+	let firstNumber = prompt("enter first value");
+	let secondNumber = prompt("enter second value");
+	let operator = prompt("what do you want to do");
+	if (operator == "add"){
+		finalResult = (+firstNumber) + (+secondNumber) ;
+		alert(finalResult)
+	}
+	if (operator == "subtract") {
+		if (firstNumber > secondNumber) {
+			finalResult = firstNumber - secondNumber ;
+			alert(finalResult)
+		}
+		else{
+			alert("firstNumber is smaller than secondNumber")
+		}
+	}
+	if (operator == "multiply") {
+		finalResult = firstNumber * secondNumber ;
+		alert(finalResult)
+	}
+	if (operator == "division") {
+		if (firstNumber > secondNumber) {
+			finalResult = firstNumber/secondNumber ;
+			alert(finalResult)
+		}
+		else{
+			alert("numerator is smaller than denominator")
+		}
+	}
+
+
 2. 🎖Write a if else statement which checks if the status is single `console.log` the message `John is single` or else `John is married`
 ```js
 var firstName = 'John';
 var status = 'single';
 // Your code goes here
+if (status == 'single'){
+	alert("john is single")
+}
+	else{
+		alert("john is married")
+	}
 ```
 
 3. 🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 ```js
 // your code goes here
+let firstInteger = prompt("enter any number")
+let secondInteger = prompt("enter another number")
+if(firstInteger > secondInteger){
+	alert(firstInteger)
+}
+	else{
+		alert(secondInteger)
+	}
 ```
 
 4. 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 
 ```js
 // Your code goes here
+var firstNumber = +prompt("first number")
+var secondNumber = +prompt("second number")
+var thirdNumber = +prompt("third number")
+var result = firstNumber * secondNumber * thirdNumber;
+if (d>0){
+	alert(`+`+ d)
+}
+else{
+	alert(d)
+}
 ```
 
 ## Switch Statement
