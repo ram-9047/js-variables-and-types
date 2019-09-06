@@ -141,3 +141,9 @@
 // 	}
 // 	num++
 // }
+var a = 1;
+for (; a <= 20; a++){
+	if (a % 2 == 0) {
+		alert(a + 'is even number')
+	}
+}
