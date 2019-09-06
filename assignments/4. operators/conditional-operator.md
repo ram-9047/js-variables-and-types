@@ -100,6 +100,38 @@ Take a number value from user and alert the message if it matches the conditions
 * [ ] PLEASE TRY AGAIN, if  is none of the above.
 ```js
 // Your code goes here
+let a = +prompt("enter any number")
+switch (a){
+	case 1:
+	alert("ONE")
+	break
+	case 2:
+	alert("TWO")
+	break
+	case 3:
+	alert("THREE")
+	break
+	case 4:
+	alert("FOUR")
+	break
+	case 5:
+	alert("FIVE")
+	break
+	case 6:
+	alert("SIX")
+	break
+	case 7:
+	alert("SEVEN")
+	break
+	case 8:
+	alert("EIGHT")
+	break
+	case 9:
+	alert("NINE")
+	break
+	default:
+	alert("Input number is out of range")
+}
 ```
 
 2. 🎖Using switch statement do the following
@@ -115,4 +147,31 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 * [ ] `FF` if `marks` is less than or equal to 30
 ```js
 // Your code goes here
+let a = prompt("enter any number")
+switch (true){
+	case (a > 90):
+	alert("AA")
+	break
+	case (90 >= a , a > 80):
+	alert("AB")
+	break
+	case (80 >= a , a > 70):
+	alert("BB")
+	break
+	case (70 >= a , a > 60):
+	alert("BC")
+	break
+	case (60 >= a , a > 50):
+	alert("CC")
+	break
+	case(50 >= a , a > 40):
+	alert("CD")
+	break
+	case(40 >= a , a > 30):
+	alert("DD")
+	break
+	case(a <= 30):
+	alert("Fail")
+	break
+}
 ```

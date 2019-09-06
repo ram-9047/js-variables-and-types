@@ -86,13 +86,58 @@
 // }
 
 
-var a = +prompt("first number")
-var b = +prompt("second number")
-var c = +prompt("third number")
-var d = a*b*c;
-if (d>0){
-	alert(`+`+ d)
-}
-else{
-	alert(d)
-}
+// var a = +prompt("first number")
+// var b = +prompt("second number")
+// var c = +prompt("third number")
+// var d = a*b*c;
+// if (d>0){
+// 	alert(`+`+ d)
+// }
+// else{
+// 	alert(d)
+// }
+
+// 
+
+// let temp = +prompt("enter temp. ")
+// switch (true){
+// 	case (temp < 32):
+// 	alert("too cold");
+// 	break
+// 	case (temp > 110):
+// 	alert("its too hot");
+// 	break
+// 	default:
+// 	alert("go fo it ")
+// }
+
+// let a = prompt("enter any number")
+// if (a < 32) {
+// 	alert("too cold")
+// } else if (a > 110) {
+// 	alert("too hot")
+// } else{
+// 	alert("moderate")
+// }
+// alert( alert(1) || 2 || alert(3) );
+
+// var a = 0;
+// for (a = 1; a <= 10; a++){
+// 	alert(a)
+// }
+
+// var sum = 0
+// var num = 1
+// while(num <=20){
+// 	sum = sum + num;
+// 	num++;
+// }
+// alert("sum =" + sum)
+
+// var num = 1
+// while(num <= 20){
+// 	if(num % 2 == 0){
+// 		alert(num + "is even")
+// 	}
+// 	num++
+// }

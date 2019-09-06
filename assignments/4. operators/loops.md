@@ -38,14 +38,32 @@ var amount = 0;
 // 6, 7, 8, 9, 10
 
 // Your code goes here
+var a = 1;
+for (a = 1; a <= 10; a++){
+	alert(a)
+}
 ```
 
 6. 🎖Use a while loop to add up the numbers 1 to 20.
 ```js
 // Your code goes here
+var sum = 0
+var num = 0
+while(num <=20){
+	sum = sum + num;
+	num++;
+}
+alert("sum =" + sum)
 ```
 
 7. 🎖Use a while loop to print out the even number from 1 to 20. (You'll need Modulus for this. And an IF Statement.)
 ```js
 // Your code goes here
+var num = 1
+while(num <= 20){
+	if(num % 2 == 0){
+		alert(num + "is even")
+	}
+	num++
+}
 ```
