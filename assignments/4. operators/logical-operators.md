@@ -51,7 +51,6 @@ let isGuestOneVeg = false;
 let isGuestTwoVeg = true;
 (isguestOneVeg || isGuestTwoVeg && alert("make sure to offer up some vegan options."))
 
-let is
 // Your code goes here
 ```
 

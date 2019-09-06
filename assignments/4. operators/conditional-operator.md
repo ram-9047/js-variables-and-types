@@ -130,7 +130,7 @@ switch (a){
 	alert("NINE")
 	break
 	default:
-	alert("Input number is out of range")
+	alert("PLEASE TRY AGAIN")
 }
 ```
 
