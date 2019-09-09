@@ -5,32 +5,32 @@
 * [ ] Logical AND operation
 
 ```js
-true  && true; //output
-true  && false;
-false && true;
-false && false;
-"foo" && "bar";
-"bar" && "foo";
-"foo" && "";
-""    && "foo";
-" "   && "John" && "" && false
-false && "Hey" && undefined
-"undefined" && false && 42
+true  && true; //true
+true  && false;// false
+false && true;// false
+false && false;//false
+"foo" && "bar";//"bar"
+"bar" && "foo";// "foo"
+"foo" && "";//""
+""    && "foo";//"foo"
+" "   && "John" && "" && false//""
+false && "Hey" && undefined// false
+"undefined" && false && 42// false
 ```
 
 * [ ] Logical OR operation
 ```js
-true  || true;
-true  || false;
-false || true;
-false || false;
-"foo" || "bar";
-"bar" || "foo";
-"foo" || "";
-""    || "foo";
-" "   || "John" || "" || false
-false || "Hey" || undefined
-"undefined" || false || 42
+true  || true;// true
+true  || false;//true
+false || true;//true
+false || false;//false
+"foo" || "bar";//"foo"
+"bar" || "foo";//"bar"
+"foo" || "";//"foo"
+""    || "foo";//""
+" "   || "John" || "" || false//""
+false || "Hey" || undefined//"hey"
+"undefined" || false || 42//"undefined"
 ```
 
 2. 🥈You have two variables i.e `isGuestOneVeg` and  `isGuestTwoVeg` according to the value using logical && and || opeartor do the following.
@@ -41,6 +41,16 @@ false || "Hey" || undefined
 ```js
 let isGuestOneVeg = false;
 let isGuestTwoVeg = false;
+(isGuestOneVeg && isGuestTwoVeg && alert ("offer up anything on menu"))
+
+let isGuestOneVeg = true;
+let isGuestTwoVeg = true;
+(isGuestOneVeg && isGuestTwoVeg && alert("only offer up vegan dishes"))
+
+let isGuestOneVeg = false;
+let isGuestTwoVeg = true;
+(isguestOneVeg || isGuestTwoVeg && alert("make sure to offer up some vegan options."))
+
 // Your code goes here
 ```
 
@@ -52,9 +62,30 @@ let isGuestTwoVeg = false;
 ```js
 let temperature = 4;
 // Your code goes here
+let temp = +prompt("enter temp. ")
+switch (true){
+	case (temp < 32):
+	alert("too cold");
+	break
+	case (temp > 110):
+	alert("its too hot");
+	break
+	default:
+	alert("go fo it ")
+}
+
+let a = prompt("enter any number")
+if (a < 32) {
+	alert("too cold")
+} else if (a > 110) {
+	alert("too hot")
+} else{
+	alert("moderate")
+}
+
 ```
 
 4. 🎖 Output of this and the reason behind the output.
 ```js
-alert( alert(1) || 2 || alert(3) );
+alert( alert(1) || 2 || alert(3) ); // 1 after that 2 . first compiler will compare "alert(1) and 2", out of which both are true value and OR operator will give first truthy value so compiler will give first value i.e "alert(1)". After that compiler will compare "2 || alert(3), and both the truthy values so compiler will give first truthy value"
 ```
